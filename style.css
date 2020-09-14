@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:'PerfectMoment-Script' ;
+    src: url('./Webfont/PerfectMoment-Script.woff') format('woff');
+    src: url('./Webfont/PerfectMoment-Script.eot') format('embedded-opentype');
+    src: url('./Webfont/PerfectMoment-Script.woff2') format('woff2');
+}
+
+body{
+    background-color:#FFCDB2 ;
+}
+
+span {
+    font-family: 'PerfectMoment-Script';
+    color: white;
+    font-size: 8rem;
+    letter-spacing: 2rem;
+    /*opacity: 0.65;*/
+    position: relative;
+    top: -3.8rem;
+}
+
+.random {
+    position: absolute;
+    top: 10.5rem;
+}
+
+.welcome{
+    margin: 1em;
+    font-family: 'Syne', sans-serif;
+    margin-top: 2em;
+    
+}
+/*The figure section*/
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+flex-img{
+    align-content: space-between;
+}
+
+figure img {
+  width: 300px;
+  height: 300px;
+  border: 1em solid #E5989B;
+  box-shadow: 0.2em 0.2em #6D6875;  
+}
+
+figcaption {
+    width: 300px;
+    color: gray;
+    text-align: center;
+}
+
+/*The Footer Section*/
+.footer{
+    background-color:#6D6875 ;
+    width: 100%
+}
+.footer img{
+    width: 150px;
+}
+/*Images can be placed in the center using text-align once it's wrapped in a div*/
+.footer-img {
+    text-align: center;
+}
+
+.footer p{
+    text-align: center;
+    color: rgb(192, 187, 187);
+    padding-top: 0.3rem;
+}
+
+@media (max-width: 748px) {
+    .footer {
+        width: 748px;
+    }
+    .container{
+        padding-left: 8.5em;
+        padding-right: 8.5em;
+    }
+}
+
+/* minimal breakpoint of 330px*/
+@media (max-width: 330px)  {
+    .random {
+        top: 12.5rem;
+    }
+}
